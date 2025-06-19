@@ -28,6 +28,13 @@
   color: #61dafb;
 }
 
+.App-card {
+  background-color: #cae5ff;
+  padding: 15px; /* Between content and border */
+  margin: 30px; /* Between element and other elements */
+  border: 3px; /* Border thickness */
+}
+
 @keyframes App-logo-spin {
   from {
     transform: rotate(0deg);
