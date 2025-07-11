@@ -1,4 +1,6 @@
 import './App.css';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import HabitTracker from "./pages/HabitTracker.js";
 
 function App() {
   const title = "Tristan Roberts Website";
