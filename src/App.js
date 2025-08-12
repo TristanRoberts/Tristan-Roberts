@@ -10,7 +10,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h1>My Header</h1>
+        <div className="App-header-top">
+          <h1>My Header</h1>
+        </div>
+        <div className="App-header-bottom">
+          <h1>Bottom Header</h1>
+        </div>
       </header>
       <BrowserRouter>
         <Link to="/About">About me link</Link>
@@ -37,8 +42,10 @@ export default App;
 
 
 Notes:
-  * i should add another component just like above to test what it does. It should 
-  just still have "My Header" but erase the "About Me" title that pops up
+  1. Split the header into 2 sections. Top section is just centered "Tristan Roberts' website". Bottom has the icons/links
+  2. Make the header smaller, grey, and rounded corners
+  3. links or icons to other pages from the header (Home, About, Resume)
+  4. Resume page with downloadable pdf
 
 Learned:
   * <Link to="/HabitTracker"> This is a link </Link> --The Link is the actual link on screen
@@ -49,4 +56,5 @@ Learned:
       pages then you would place the Header component above the <Routes>). <Link> has to be inside <BrowserRouter>. 
       'path="..."' is just the receiver for 'to="..."' prop. "element={...}" just tells the app what component to place 
       here when Link is clicked. 
+  * "id" prop has to be unique per page. "className" (case sensitive) or "class" prop gives you the css styling. 
 */
