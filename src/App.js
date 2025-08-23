@@ -9,22 +9,22 @@ function App() {
 
   return (
     <div className="App">
-      <header className="App-header">
-        <div className="App-header-top">
-          <h1>My Header</h1>
-        </div>
-        <div className="App-header-bottom">
-          <h1>Bottom Header</h1>
-        </div>
-      </header>
       <BrowserRouter>
-        <Link to="/About">About me link</Link>
-        <br />
-        <Link to="/HabitTracker">Habit Tracker link</Link> 
-        <Routes>
-          <Route path="/about" element={<About />} />
-          <Route path="/HabitTracker" element={<HabitTracker/>} />
-        </Routes>
+        <header className="App-header">
+          <div className="App-header-top">
+            <h1>Tristan Roberts's Website</h1>
+          </div>
+          <div className="App-header-bottom">
+              <Link className="Page-link" to="/About">About me link</Link>
+              <Link className="Page-link" to="/HabitTracker">Habit Tracker link</Link> 
+          </div>
+        </header>
+        <div>
+          <Routes>
+            <Route path="/about" element={<About />} />
+            <Route path="/HabitTracker" element={<HabitTracker/>} />
+          </Routes>
+        </div>
       </BrowserRouter>
     </div>
   );
@@ -35,6 +35,11 @@ export default App;
 // https://www.geeksforgeeks.org/reactjs/link-component-in-react-router/
 // https://www.geeksforgeeks.org/reactjs/how-to-link-a-custom-react-component-mybutton-to-another-page/
 
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-content
+// https://developer.mozilla.org/en-US/docs/Web/CSS/align-items
+// https://developer.mozilla.org/en-US/docs/Web/CSS/justify-content
+// https://developer.mozilla.org/en-US/docs/Web/CSS/position
+
 /*
 <div className="App">
       <header className="App-header">
@@ -42,8 +47,9 @@ export default App;
 
 
 Notes:
-  1. Split the header into 2 sections. Top section is just centered "Tristan Roberts' website". Bottom has the icons/links
-  2. Make the header smaller, grey, and rounded corners
+  1. Bottom Header, find a way to style it with links and " | " as spacing
+  2. when cursor is over link component highlight it
+  2. Make the header smaller, grey, 
   3. links or icons to other pages from the header (Home, About, Resume)
   4. Resume page with downloadable pdf
 
@@ -57,4 +63,6 @@ Learned:
       'path="..."' is just the receiver for 'to="..."' prop. "element={...}" just tells the app what component to place 
       here when Link is clicked. 
   * "id" prop has to be unique per page. "className" (case sensitive) or "class" prop gives you the css styling. 
+  * In css file, "px" are pixels, "vh" is viewport height (proportional to window size). 
+  * "<a href=www.stuff.com>" used for external websites or internal pages full refresh. "<Link>" is for not full page refresh internal routing
 */
