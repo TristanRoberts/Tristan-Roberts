@@ -26,6 +26,7 @@
   color: white;
   position: sticky; /* this is how compoents stick to top of page */ 
   top: 0; 
+  border-bottom: solid black; 
   /* background-attachment: fixed;  --is just the actual background css, not actual components and content*/
 }
 

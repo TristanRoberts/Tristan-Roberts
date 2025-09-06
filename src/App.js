@@ -5,6 +5,7 @@ import About from "./About"; //with .js extension or without?
 
 function App() {
   const title = "Tristan Roberts Website";
+  const description = "A Boston based software engineer looking for junior level roles."; 
 
 
   return (
@@ -31,6 +32,10 @@ function App() {
 }
 
 export default App;
+
+//design
+//https://colorlib.com/wp/personal-websites/ 
+//https://www.hostinger.com/tutorials/web-developer-portfolio
 
 // https://www.geeksforgeeks.org/reactjs/link-component-in-react-router/
 // https://www.geeksforgeeks.org/reactjs/how-to-link-a-custom-react-component-mybutton-to-another-page/
