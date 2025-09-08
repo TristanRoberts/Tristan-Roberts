@@ -1,7 +1,8 @@
 import './App.css';
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
-import HabitTracker from "./pages/HabitTracker.js"; //play with this for 'element'
+import HabitTracker from "./pages/HabitTracker.js"; 
 import About from "./About"; //with .js extension or without?
+import Home from "./Home.js"; 
 
 function App() {
   const title = "Tristan Roberts Website";
@@ -16,12 +17,14 @@ function App() {
             <h1>Tristan Roberts's Website</h1>
           </div>
           <div className="App-header-bottom">
+              <Link className='Page-link' to="/">Home page link</Link>
               <Link className="Page-link" to="/About">About me link</Link>
               <Link className="Page-link" to="/HabitTracker">Habit Tracker link</Link> 
           </div>
         </header>
         <div>
           <Routes>
+            <Route path="/" element={<Home />}/>
             <Route path="/about" element={<About />} />
             <Route path="/HabitTracker" element={<HabitTracker/>} />
           </Routes>
