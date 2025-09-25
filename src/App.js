@@ -2,7 +2,10 @@ import './App.css';
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
 import HabitTracker from "./pages/HabitTracker.js"; 
 import About from "./About"; //with .js extension or without?
-import Home from "./Home.js"; 
+import Home from "./Home.js"; //"./Home.js"; 
+import LinkedInPicture from "./assets/linkedIn_picture.jpg"; 
+
+
 
 function App() {
   const title = "Tristan Roberts Website";
@@ -13,13 +16,15 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header className="App-header">
-          <div className="App-header-top">
-            <h1>Tristan Roberts's Website</h1>
+          <div className="App-header-left">
+            <img className= "LinkedIn-picture" src={LinkedInPicture} alt="LinkedIn Picture"/>
+            <span>Tristan Roberts</span>
           </div>
-          <div className="App-header-bottom">
+          <div className="App-header-right">
               <Link className='Page-link' to="/">Home page link</Link>
               <Link className="Page-link" to="/About">About me link</Link>
               <Link className="Page-link" to="/HabitTracker">Habit Tracker link</Link> 
+              
           </div>
         </header>
         <div>
@@ -35,6 +40,30 @@ function App() {
 }
 
 export default App;
+
+/*
+
+    const myElement = document.getElementById('myId');
+    for (let i = 0; i < myElement.attributes.length; i++) {
+        const attribute = myElement.attributes[i];
+        console.log(`${attribute.name}: ${attribute.value}`);
+    }
+
+
+
+    const myElement = document.getElementById('myId');
+    const properties = Object.keys(myElement);
+    properties.forEach(prop => {
+        console.log(`${prop}: ${myElement[prop]}`);
+    });
+
+
+
+
+
+*/
+
+
 
 //design
 //https://colorlib.com/wp/personal-websites/ 
@@ -56,10 +85,12 @@ export default App;
 
 Notes:
   1. Bottom Header, find a way to style it with links and " | " as spacing
-  2. when cursor is over link component highlight it
-  2. Make the header smaller, grey, 
-  3. links or icons to other pages from the header (Home, About, Resume)
-  4. Resume page with downloadable pdf
+  2. Print out the properties of elements to see what gets passed down and what is automatic for that type of tag. 
+          Look at why display flex was overridden. How many children does flexbox permeate through?
+  3. Resume page with downloadable pdf
+  4. LinkedIn link, Github Link, etc. 
+  5. Make sure all the hovers are consistent in their color. 
+  6. Maybe instead of different pages we have the link point to different parts of the same page (it scrolls for you). 
 
 Learned:
   * <Link to="/HabitTracker"> This is a link </Link> --The Link is the actual link on screen
@@ -73,4 +104,7 @@ Learned:
   * "id" prop has to be unique per page. "className" (case sensitive) or "class" prop gives you the css styling. 
   * In css file, "px" are pixels, "vh" is viewport height (proportional to window size). 
   * "<a href=www.stuff.com>" used for external websites or internal pages full refresh. "<Link>" is for not full page refresh internal routing
+  * Block vs Inline: tags such as <div> or <p> are block and will start on a new line and add margin. Tags such as <span> are inline and do not start on a newline and only take up limited space. 
+  * https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+  * 
 */

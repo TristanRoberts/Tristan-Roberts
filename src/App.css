@@ -15,13 +15,14 @@
 
 .App-header {
   background-color: #61dafb;
-  min-height: 20vh;
+  min-height: 10vh;
   max-height: 40vh;
   display: flex; /* Defines a Flexbox for other props (shrink and grow components to fit screen) [flex, grid, block]. */
-  flex-direction: column; /* This determines how "align" and "justify" work (which axis they stretch). Perhaps MOST important before other props. */
-  align-items: end; /* Alignment of items on cross axis.  */
+  flex-direction: row; /* This determines how "align" and "justify" work (which axis they stretch). Perhaps MOST important before other props. */
+  align-items: center; /* Alignment of items on cross axis.  */
   /* align-content: center; /*-- Space between and around content items along cross axis. */
   /*justify-content: center; */ /* -- Space between and around content items along main axis (flex-direction). */
+  justify-content: space-between;
   font-size: calc(10px + 2vmin);
   color: white;
   position: sticky; /* this is how compoents stick to top of page */ 
@@ -30,23 +31,33 @@
   /* background-attachment: fixed;  --is just the actual background css, not actual components and content*/
 }
 
-.App-header-top {
-  color: #000000; 
-  flex-direction: column;
-  align-self: center;
-  border-radius: 25px; 
+.App-header-left {
+  display: flex;  /* Ok for some reason this is actually doing something. Look at why display flex was overridden */ 
+  align-items: center;
+  color: #000000;  
+  padding: 5px;
+  margin: 10px; 
+  border-radius: 20px; 
+  /*
+  align-items: end;
+  align-content: end;
+  justify-content: end;
+  */
+}
+.App-header-left:hover {
+  background-color: #686262;
 }
 
-.App-header-bottom {
-  background-color: #b1b1b1;
-  flex-direction: row;
-  text-align: right;
+.App-header-right {
+  background-color: #b1b1b1; 
   border-radius: 25px;
   /* padding: 25px; */
   margin: 15px; 
 }
 .Page-link {
-  background-color: #d62c2c;
+  /*background-color: #d62c2c;*/
+  text-decoration: none;
+  color: #000000; 
   margin: 10px; 
   padding: 0px 10px; /* vertical padding, horizontal padding */
 }
@@ -55,14 +66,22 @@
   background-color: #686262; 
 }
 
+.LinkedIn-picture {
+  background-color: #61dafb;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%; 
+  margin: 0px 10px 0px 0px; /* Top Right Down Left */
+}
+
 .App-link {
   color: #61dafb;
 }
 
 .App-card {
   background-color: #cae5ff;
-  padding: 15px; /* Between content and border */
-  margin: 30px; /* Between element and other elements */
+  padding: 15px; /* Between element's content and border (inside) */
+  margin: 30px; /* Between element and other elements (outside) */
   border: 3px; /* Border thickness */
 }
 
