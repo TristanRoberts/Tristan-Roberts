@@ -16,13 +16,16 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <header className="App-header">
-          <div className="App-header-left">
-            <img className= "LinkedIn-picture" src={LinkedInPicture} alt="LinkedIn Picture"/>
-            <span>Tristan Roberts</span>
-          </div>
+          <Link className="App-header-left" to="/">
+              <img className= "LinkedIn-picture" src={LinkedInPicture} alt="LinkedIn Picture"/>
+              <span>Tristan Roberts</span>
+          </Link>
           <div className="App-header-right">
+              
               <Link className='Page-link' to="/">Home page link</Link>
+              <div className="Vertical-line" />
               <Link className="Page-link" to="/About">About me link</Link>
+              <div className="Vertical-line" />
               <Link className="Page-link" to="/HabitTracker">Habit Tracker link</Link> 
               
           </div>
@@ -68,6 +71,8 @@ export default App;
 //design
 //https://colorlib.com/wp/personal-websites/ 
 //https://www.hostinger.com/tutorials/web-developer-portfolio
+//https://prismic.io/blog/css-hover-effects
+//https://unsplash.com/s/photos/website-background
 
 // https://www.geeksforgeeks.org/reactjs/link-component-in-react-router/
 // https://www.geeksforgeeks.org/reactjs/how-to-link-a-custom-react-component-mybutton-to-another-page/
@@ -91,6 +96,9 @@ Notes:
   4. LinkedIn link, Github Link, etc. 
   5. Make sure all the hovers are consistent in their color. 
   6. Maybe instead of different pages we have the link point to different parts of the same page (it scrolls for you). 
+  7. Hover might work best when there is a thin border outlining what will be highlighted. 
+  8. Make a bottom of the page dark section with all links and contact. 
+  9. Goals and aspirations. AWS certification, Masters in AI. 
 
 Learned:
   * <Link to="/HabitTracker"> This is a link </Link> --The Link is the actual link on screen
