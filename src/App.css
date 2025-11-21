@@ -46,13 +46,14 @@
   */
 }
 .App-header-left:hover {
-  background-color: #686262;
+  /*background-color: #686262;*/
+  color: #85C7F2;
 }
 
 .App-header-right {
   display: flex; 
   flex-direction: row;
-  background-color: #b1b1b1; 
+  /*background-color: #b1b1b1; */
   margin: 15px; 
   border-radius: 20px; 
 }
@@ -67,7 +68,8 @@
 }
 
 .Page-link:hover {
-  background-color: #686262; 
+  /*background-color: #686262; */
+   color: #85C7F2;
 }
 
 .Vertical-line {
@@ -95,6 +97,13 @@
   padding: 15px; /* Between element's content and border (inside) */
   margin: 30px; /* Between element and other elements (outside) */
   border: 3px; /* Border thickness */
+}
+
+footer {
+  background-color: #000000; 
+  min-height: 10vh;
+  max-height: 20vh;
+  bottom: 0; 
 }
 
 @keyframes App-logo-spin {

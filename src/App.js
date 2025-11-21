@@ -8,12 +8,12 @@ import LinkedInPicture from "./assets/linkedIn_picture.jpg";
 
 
 function App() {
-  const title = "Tristan Roberts Website";
-  const description = "A Boston based software engineer looking for junior level roles."; 
+  const title = "Hi, I'm Tristan Roberts";
+  const description = "A junior software engineer with experience primarily in full-stack development but a graduate from Rensselaer Polytechnic Institute with a Bachleor's in Computer Science looking to dive into any role that is software related. "; 
 
 
   return (
-    <div className="App">
+    <body className="App">
       <BrowserRouter>
         <header className="App-header">
           <Link className="App-header-left" to="/">
@@ -37,8 +37,11 @@ function App() {
             <Route path="/HabitTracker" element={<HabitTracker/>} />
           </Routes>
         </div>
+        <footer>
+
+        </footer>
       </BrowserRouter>
-    </div>
+    </body>
   );
 }
 
@@ -86,7 +89,13 @@ export default App;
 <div className="App">
       <header className="App-header">
 
-
+Design Questions:
+* Single page vs multipage? 
+  * Do i want a single page or multipage app or combination of the two? 
+  * If single page, is there any content that feels like it should be its own page?
+  * If multipage, is it too convoluted and too hard to follow? how can we condense content so it makes sense?
+  * If combination, what is the main content on the single page and what are the branches? SHould the branches be 
+  consistent in their content e.g. case work? Or looser restrictions for what is an independent page. 
 
 Notes:
   1. Bottom Header, find a way to style it with links and " | " as spacing
@@ -99,6 +108,10 @@ Notes:
   7. Hover might work best when there is a thin border outlining what will be highlighted. 
   8. Make a bottom of the page dark section with all links and contact. 
   9. Goals and aspirations. AWS certification, Masters in AI. 
+  10. Spinning animation for hover effect. 
+  11. Take out notes and put them in google drive. 
+  12. main tag should not have duplicated content. 
+  13. Use head? tag to name the tab in the browser. 
 
 Learned:
   * <Link to="/HabitTracker"> This is a link </Link> --The Link is the actual link on screen
