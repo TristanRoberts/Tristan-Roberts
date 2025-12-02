@@ -24,7 +24,6 @@
   /*justify-content: center; */ /* -- Space between and around content items along main axis (flex-direction). */
   justify-content: space-between;
   font-size: calc(10px + 2vmin);
-  color: white;
   position: sticky; /* this is how compoents stick to top of page */ 
   top: 0; 
   border-bottom: solid black; 
@@ -47,7 +46,7 @@
 }
 .App-header-left:hover {
   /*background-color: #686262;*/
-  color: #85C7F2;
+  color: #748CAB; /* Dusty Denim */
 }
 
 .App-header-right {
@@ -69,7 +68,11 @@
 
 .Page-link:hover {
   /*background-color: #686262; */
-   color: #85C7F2;
+   color: #748CAB;  /* dusty denim */
+   /*color: #4DA167; */ /* shamrock */
+   /*color: #17B890; */ /* mint leaf */
+   /*color: #85C7F2; */ /* sky blue */
+   /*color: #4F6D7A; */ /* blue slate */
 }
 
 .Vertical-line {
@@ -81,15 +84,37 @@
 }
 
 .LinkedIn-picture {
-  background-color: #61dafb;
+  /*background-color: #61dafb;*/
   width: 50px;
   height: 50px;
   border-radius: 50%; 
   margin: 0px 10px 0px 0px; /* Top Right Down Left */
 }
 
-.App-link {
-  color: #61dafb;
+.Introduction {
+  
+}
+
+.Socials-sidebar {
+  background-color: #748CAB; /* dusty denim */
+  display: flex; 
+  flex-direction: column;
+  align-items: center;
+  /* justify-content: space-between; */
+  width: 70px;
+  height: 200px; 
+}
+
+.Socials-icon {
+  width: 40px; /* 5px on each side between element and border */
+  height: 40px; 
+  border-radius: 10px; /* for linkedin logo must have space equal to size of linked in logo, so 25px on each side */
+
+  padding: 10px; /* Between element's content and border (inside) */
+  margin: 20px; /* Between element and other elements (outside) */
+}
+.Socials-icon:hover {
+  background-color: #a75a5a; 
 }
 
 .App-card {

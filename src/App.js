@@ -1,9 +1,11 @@
-import './App.css';
 import { Routes, Route, BrowserRouter, Link } from 'react-router-dom';
+
+import './App.css';
 import HabitTracker from "./pages/HabitTracker.js"; 
 import About from "./About"; //with .js extension or without?
 import Home from "./Home.js"; //"./Home.js"; 
-import LinkedInPicture from "./assets/linkedIn_picture.jpg"; 
+import Resume from "./Resume.js"; 
+import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg"; 
 
 
 
@@ -22,17 +24,19 @@ function App() {
           </Link>
           <div className="App-header-right">
               
-              <Link className='Page-link' to="/">Home page link</Link>
+              <Link className='Page-link' to="/">Home</Link>
               <div className="Vertical-line" />
-              <Link className="Page-link" to="/About">About me link</Link>
+              <Link className='Page-link' to="/Resume">Resume</Link>
+              <div className = "Vertical-line" />
+              <Link className="Page-link" to="/About">About Me</Link>
               <div className="Vertical-line" />
-              <Link className="Page-link" to="/HabitTracker">Habit Tracker link</Link> 
-              
+              <Link className="Page-link" to="/HabitTracker">Habit Tracker</Link> 
           </div>
         </header>
         <div>
           <Routes>
             <Route path="/" element={<Home />}/>
+            <Route path="Resume" element={<Resume/>}/>
             <Route path="/about" element={<About />} />
             <Route path="/HabitTracker" element={<HabitTracker/>} />
           </Routes>
