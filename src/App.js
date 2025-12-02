@@ -9,6 +9,8 @@ import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg";
 
 
 
+//https://blog.react-pdf.dev/top-6-pdf-viewers-for-reactjs-developers-in-2025
+
 function App() {
   const title = "Hi, I'm Tristan Roberts";
   const description = "A junior software engineer with experience primarily in full-stack development but a graduate from Rensselaer Polytechnic Institute with a Bachleor's in Computer Science looking to dive into any role that is software related. "; 
@@ -116,6 +118,8 @@ Notes:
   11. Take out notes and put them in google drive. 
   12. main tag should not have duplicated content. 
   13. Use head? tag to name the tab in the browser. 
+  14. Make a simple fainlty grey horizontal line to separate main content. 
+  15. Open each page in a minimized window to adjust flex box and vh vs px. 
 
 Learned:
   * <Link to="/HabitTracker"> This is a link </Link> --The Link is the actual link on screen
