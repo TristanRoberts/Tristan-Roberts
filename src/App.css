@@ -117,6 +117,15 @@
   background-color: #a75a5a; 
 }
 
+.react-pdf__Page { /* For some reason this inherited class from read-pdf is overriding my local styling unless I use !important */
+  display: flex; /* Defines a Flexbox for other props (shrink and grow components to fit screen) [flex, grid, block]. */
+  flex-direction: column; /* This determines how "align" and "justify" work (which axis they stretch). Perhaps MOST important before other props. */
+  align-items: center; /* Alignment of items on cross axis.  */
+
+  background-color: #6b0505 !important;
+  position: static !important;  
+}
+
 .App-card {
   background-color: #cae5ff;
   padding: 15px; /* Between element's content and border (inside) */

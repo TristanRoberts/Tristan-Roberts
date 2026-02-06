@@ -50,7 +50,7 @@ const Resume = () => {
    return (
     <div>
         <Document file={pdfResume} onLoadSuccess={onDocumentLoadSuccess}>
-            <Page pageNumber={pageNumber}/>
+            <Page className="react-pdf__Page" pageNumber={pageNumber}/> 
         </Document>
         <p>
             Page {pageNumber} of {numPages}
@@ -63,3 +63,20 @@ const Resume = () => {
 }
 
 export default Resume; 
+
+
+/*
+In JSX, the style prop is used for inline styling, but its value must be a JavaScript object, not a string as in plain HTML. This object uses camelCase property names for CSS properties (e.g., backgroundColor instead of background-color). 
+Key Concepts
+Double Curly Braces: The syntax requires double curly braces: the outer set encloses the JavaScript expression (the style object), and the inner set defines the object literal itself, e.g., <h1 style={{ color: "red", fontSize: "16px" }}>Hello World!</h1>.
+CamelCase Properties: Since the styles are written as JavaScript objects, properties like background-color must be written as backgroundColor.
+Values: Values are typically strings, but some numeric values (like padding or lineHeight) automatically get a px suffix appended by React unless you specify a different unit.
+Dynamic Styles: You can store the style object in a separate variable or use props and state to create dynamic styles. 
+
+
+
+
+
+
+
+*/
