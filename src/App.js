@@ -11,12 +11,10 @@ import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg";
 //making a duimmy change
 //https://blog.react-pdf.dev/top-6-pdf-viewers-for-reactjs-developers-in-2025
 //https://medium.com/better-programming/how-to-display-download-and-create-pdf-files-in-react-65d2e7ddead7
-//my Local change 1
-//my local change 2
-
-
-
-//Some other non impacting change
+//just adding a dummy comment
+//Test1
+//Test2
+//Test3
 
 function App() {
   const title = "Hi, I'm Tristan Roberts";
