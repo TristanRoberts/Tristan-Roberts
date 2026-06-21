@@ -6,6 +6,8 @@ import { Document, Page, PDFViewer, pdfjs } from 'react-pdf';
 import "react-pdf/dist/Page/TextLayer.css"; 
 import pdfResume from "./assets/Tristan_V_Roberts_Resume.pdf"; //this is necessary we cant have direct file path, importing it allows react to package it, "<Document> component doesnt like direct path to pdf"
 
+//Adding new changes here 1
+//Adding new changes here 2
 
 pdfjs.GlobalWorkerOptions.workerSrc = new URL(
     'pdfjs-dist/build/pdf.worker.min.mjs', 
