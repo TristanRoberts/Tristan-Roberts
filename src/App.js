@@ -12,7 +12,6 @@ import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg";
 //https://medium.com/better-programming/how-to-display-download-and-create-pdf-files-in-react-65d2e7ddead7
 
 
-
 function App() {
   const title = "Hi, I'm Tristan Roberts";
   const description = "A junior software engineer with experience primarily in full-stack development but a graduate from Rensselaer Polytechnic Institute with a Bachleor's in Computer Science looking to dive into any role that is software related. "; 
