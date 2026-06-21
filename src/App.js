@@ -7,7 +7,6 @@ import Home from "./Home.js"; //"./Home.js";
 import Resume from "./Resume.js"; 
 import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg"; 
 
-//Does this affect the below lines? 
 
 
 //https://blog.react-pdf.dev/top-6-pdf-viewers-for-reactjs-developers-in-2025
@@ -16,7 +15,6 @@ import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg";
 //Test 2
 //Test 3
 //Test 4
-// Making a change here
 
 
 function App() {
