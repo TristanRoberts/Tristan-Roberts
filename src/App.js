@@ -12,12 +12,7 @@ import LinkedInPicture from "./assets/linkedIn_profile_picture.jpg";
 
 //https://blog.react-pdf.dev/top-6-pdf-viewers-for-reactjs-developers-in-2025
 //https://medium.com/better-programming/how-to-display-download-and-create-pdf-files-in-react-65d2e7ddead7
-//Test 1
-//Test 2
-//Test 3
-//Test 4
-//Random 5
-//Random 6
+
 
 
 function App() {
