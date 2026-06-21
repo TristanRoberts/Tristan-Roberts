@@ -49,15 +49,17 @@ const Resume = () => {
 
    return (
     <div>
+        <div className="Resume-header">
+            <a href="/Tristan_V_Roberts_Resume.pdf" download="Tristan_V_Roberts_Resume.pdf">
+                <button>Download Resume</button>
+            </a>
+        </div>
         <Document file={pdfResume} onLoadSuccess={onDocumentLoadSuccess}>
             <Page className="react-pdf__Page" pageNumber={pageNumber}/> 
         </Document>
         <p>
             Page {pageNumber} of {numPages}
         </p>
-        <a href="/Tristan_V_Roberts_Resume.pdf" download="Tristan_V_Roberts_Resume.pdf">
-            <button>Download Resume</button>
-        </a>
     </div>
    );
 }
